@@ -27,11 +27,15 @@ a {
 }
 
 a:hover {
-  color: #3486eb;
+  color: var(--lightBlue);
+}
+
+header a {
+  color: white;
 }
 
 button {
-  background-color: #225ca3;
+  background-color: var(--darkBlue);
   border: 0;
   padding: 1%;
   color: white;
@@ -43,7 +47,7 @@ button {
 }
 
 button:hover {
-  background-color: var(--darkBlue);
+  background-color: var(--lightBlue);
 }
 
 textarea, input {
@@ -202,7 +206,8 @@ li:nth-child(odd) {
   opacity: .6;
 }
 
-.new-post-form input {
+.new-post-form input,
+.edit-post-form input {
   width: 500px;
 }
 

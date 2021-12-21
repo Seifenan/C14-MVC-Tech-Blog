@@ -1,21 +1,28 @@
 <article>
-  <a href="/dashboard"> &larr; Back to dashboard</a>
-  <h2>
-    Edit Post
-  </h2>
-  <form class="edit-post-form">
-    <div>
-      <input name="post-title" type="text" value="{{post.title}}" />
-      <span>({{format_url post.post_url}})</span>
-    </div>
-    <div>
-      {{post.vote_count}} {{format_plural "point" post.vote_count}} by you on {{format_date post.created_at}}
-      |
-      <a href="/post/{{post.id}}">{{post.comments.length}} {{format_plural "comment" post.comments.length}}</a>
-    </div>
-    <button type="submit">Save post</button>
-    <button type="button" class="delete-post-btn">Delete post</button>
-  </form>
+  <div style="padding-top: 25px;">
+    <a href="/dashboard"> &larr; Back to dashboard</a>
+  </div>
+
+  <div class="inBody" style="text-align: center; margin-top: 20px;">
+    <h2 class="nPost">
+      Edit Post
+    </h2>
+    <form class="edit-post-form">
+      <div>
+        <p>Title: <input id="post-title" name="post-title" type="text" value="{{post.title}}" /></p>
+        <p>Content: <input id="post-url" name="post-url" type="text" value="{{post.post_url}}" /></p>
+
+      </div>
+      <div>
+        Posted by you on {{format_date post.created_at}}
+        |
+        <a href="/post/{{post.id}}">{{post.comments.length}} {{format_plural "comment" post.comments.length}}</a>
+      </div>
+      <button type="submit">Save post</button>
+      <button type="button" class="delete-post-btn">Delete post</button>
+    </form>
+  </div>
+
 </article>
 
 <form class="comment-form">
