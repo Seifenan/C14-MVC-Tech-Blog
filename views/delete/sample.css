@@ -2,15 +2,6 @@
   box-sizing: border-box;
 }
 
-:root {
-  --lightBlue: #6a9eff;
-  --darkBlue: #0415b1;
-  --red: #7B0000;
-  --footer: #041929;
-  --shadow: #7c7c7c;
-
-}
-
 body, html {
   height: 100%;
   padding: 0;
@@ -21,7 +12,7 @@ body, html {
 
 a {
   text-decoration: none;
-  color: var(--darkBlue);
+  color: #225ca3;
   font-weight: bold;
   transition: color .1s;
 }
@@ -39,15 +30,19 @@ button {
   transition: background-color .1s;
   cursor: pointer;
   border-radius: 5px;
-  margin: 10px;
 }
 
 button:hover {
-  background-color: var(--darkBlue);
+  background-color: #3486eb;
+}
+
+.post-list {
+  margin: 0;
+  padding: 0;
 }
 
 textarea, input {
-  padding: 1%;
+  padding: .5%;
   border-radius: 5px;
   border: 1px solid #ccc;
 }
@@ -80,51 +75,20 @@ form label {
 }
 
 header {
+  border-bottom: 1px solid #ccc;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 1%;
-  background-color: var(--footer);
-  padding: 20px;
-  box-shadow: 0px 10px 30px 10px var(--shadow);
 }
 
 header h1 {
   font-size: 1em;
-  padding-left: 10px;
 }
 
 main {
   flex: 1;
   padding: 2% 4%;
-}
-
-.inBody {
-  /* text-align: center; */
-  /* background-color: var(--lightBlue); */
-  border-radius: 20px;
-  box-shadow: 7px 15px 30px var(--shadow);
-  padding-bottom: 10px;
-  margin-bottom: 45px;
-}
-
-.nPost {
-  color: white;
-  background-color: var(--lightBlue);
-  padding: 10px;
-}
-
-.hide {
-  display: none;
-}
-
-.login-form,
-.signup-form {
-  text-align: center;
-  padding: 10px;
-  padding-top: 40px;
-  margin: 30px;
-  box-shadow: 7px 10px 15px var(--shadow);
 }
 
 .btn-no-style {
@@ -133,7 +97,7 @@ main {
   padding: 0;
   cursor: pointer;
   text-decoration: none;
-  color: white;
+  color: #225ca3;
   font-size: 100%;
   font-weight: bold;
   transition: color .1s;
@@ -154,22 +118,8 @@ main {
 }
 
 .post {
+  margin-bottom: 2%;
   line-height: 150%;
-  margin-bottom: 5px;
-
-}
-
-li {
-  margin-right: 40px;
-  padding: 20px;
-}
-
-li:hover {
-  box-shadow: 0px 0px 20px 5px var(--shadow);
-}
-
-li:nth-child(odd) {
-  background-color: beige;
 }
 
 .post .title span {
@@ -193,7 +143,7 @@ li:nth-child(odd) {
 }
 
 .comment:nth-child(odd) {
-  background-color: beige;
+  background-color: #fff5eb;
 }
 
 .comment .meta {
@@ -203,12 +153,7 @@ li:nth-child(odd) {
 }
 
 .new-post-form input {
-  width: 500px;
-}
-
-#post-url {
-  height: 70px;
-  width: 800px;
+  width: 300px;
 }
 
 .edit-post-form {
@@ -221,8 +166,4 @@ footer {
   justify-content: center;
   padding: 1%;
   font-size: 110%;
-  color: white;
-  background-color: var(--footer);
-  box-shadow: 0px 10px 30px 10px var(--shadow);
-
 }

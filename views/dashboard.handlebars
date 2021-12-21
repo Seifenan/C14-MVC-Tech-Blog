@@ -1,27 +1,30 @@
 <section>
-  <h2>Create New Post</h2>
 
+<div class="inBody" style="text-align: center;">  
+  <h2 class="nPost">Create New Post</h2>
   <form class="new-post-form">
     <div>
       <label for="post-title">Title</label>
       <input type="text" id="post-title" name="post-title" />
     </div>
     <div>
-      <label for="post-url">Link</label>
+      <label for="post-url">Content</label>
       <input id="post-url" name="post-url" />
     </div>
     <button type="submit" class="btn">Create</button>
   </form>
+</div>
+
 </section>
 
 {{#if posts.length}}
-<section>
-  <h2>Your Posts</h2>
+<section class="inBody">
+  <h2 style="text-align: center; padding-top: 20px;">Your Posts</h2>
   <ol>
     {{#each posts as |post|}}
     <li>
       {{> post-info post}}
-      <a href="/dashboard/edit/{{post.id}}" class="edit-link">Edit post</a>
+      <a href="/dashboard/edit/{{post.id}}" class="edit-link" style="margin: 0px;">Edit post</a>
     </li>
     {{/each}}
   </ol>
