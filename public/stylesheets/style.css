@@ -75,22 +75,18 @@ form label {
 }
 
 .wrapper {
-  width: 100%;
-  min-height: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
+  width: 96%;
+  margin-left: 2%;
 }
 
 header {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  padding: 0 1%;
   background-color: var(--footer);
   padding: 20px;
   box-shadow: 0px 10px 30px 10px var(--shadow);
+  position: fixed; 
+  width: 96%;
 }
 
 header h1 {
@@ -101,6 +97,10 @@ header h1 {
 main {
   flex: 1;
   padding: 2% 4%;
+}
+
+.createPost {
+  padding-top: 90px;
 }
 
 .inBody {
@@ -208,26 +208,21 @@ li:nth-child(odd) {
 
 .new-post-form input,
 .edit-post-form input {
-  width: 500px;
+  width: 60%;
 }
 
 #post-url {
-  height: 70px;
-  width: 800px;
-}
-
-.edit-post-form {
-  margin-bottom: 5%;
+  height: 60px;
 }
 
 footer {
-  border-top: 1px solid #ccc;
-  display: flex;
-  justify-content: center;
-  padding: 1%;
-  font-size: 110%;
+  padding: 20px;
   color: white;
   background-color: var(--footer);
   box-shadow: 0px 10px 30px 10px var(--shadow);
+  text-align: center;
+}
 
+footer a {
+  color: var(--lightBlue);
 }
