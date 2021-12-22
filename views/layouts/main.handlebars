@@ -18,10 +18,12 @@
       {{!-- <img style="width: 60px;" src="https://thumbs.gfycat.com/MadFlawedHarvestmen-max-1mb.gif" alt="PC gif"> --}}
       <nav>
         {{#if loggedIn}}
-        <a href="/dashboard">Add New</a>
-        <button id="logout" class="btn-no-style">Logout</button>
+        <div class="lgBtn">
+          <a href="/dashboard">Add New</a>
+          <button id="logout" class="btn-no-style">Logout</button>
+        </div>
         {{else}}
-        <div style="padding: 10px;">
+        <div style="padding: 10px; padding-top: 14px;">
           <a href="/login">Login</a>
         </div>
         {{/if}}
