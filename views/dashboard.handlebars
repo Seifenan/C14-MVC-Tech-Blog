@@ -1,18 +1,20 @@
 <section id="createPost">
-
-<div class="inBody" style="text-align: center;">  
-  <h2 class="nPost">Create New Post</h2>
-  <form class="new-post-form">
-    <div>
-      <label for="post-title">Title: <input type="text" id="post-title" name="post-title" /></label>
-    </div>
-    <div>
-      <label for="content">Content: <input id="content" name="content" /></label>
-    </div>
-    <button type="submit" class="btn">Create</button>
-  </form>
-</div>
-
+  {{!-- Add Users Name Here!!!!!! --}}
+  <div style="padding-bottom: 10px;">
+    Hello {{user.username}}
+  </div>
+  <div class="inBody" style="text-align: center;">
+    <h2 class="nPost">Create New Post</h2>
+    <form class="new-post-form">
+      <div>
+        <label for="post-title">Title: <input type="text" id="post-title" name="post-title" /></label>
+      </div>
+      <div>
+        <label for="content">Content: <input id="content" name="content" /></label>
+      </div>
+      <button type="submit" class="btn">Create</button>
+    </form>
+  </div>
 </section>
 
 {{#if posts.length}}

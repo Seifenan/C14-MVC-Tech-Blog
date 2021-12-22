@@ -8,10 +8,10 @@
   --red: #7B0000;
   --footer: #041929;
   --shadow: #7c7c7c;
-
 }
 
-body, html {
+body,
+html {
   height: 100%;
   padding: 0;
   margin: 0;
@@ -50,13 +50,15 @@ button:hover {
   background-color: var(--lightBlue);
 }
 
-textarea, input {
+textarea,
+input {
   padding: 1%;
   border-radius: 5px;
   border: 1px solid #ccc;
 }
 
-textarea:focus, input:focus {
+textarea:focus,
+input:focus {
   outline: none;
   border: 1px solid #3486eb;
 }
@@ -66,7 +68,7 @@ textarea {
   min-height: 100px;
 }
 
-form > div {
+form>div {
   margin-bottom: 2%;
 }
 
@@ -85,7 +87,7 @@ header {
   background-color: var(--footer);
   padding: 20px;
   box-shadow: 0px 10px 30px 10px var(--shadow);
-  position: fixed; 
+  position: fixed;
   width: 96%;
 }
 
@@ -131,6 +133,10 @@ main {
   box-shadow: 0px 0px 50px 20px var(--shadow);
 }
 
+.lgBtn {
+  padding-top: 5px;
+}
+
 .btn-no-style {
   background: none;
   border: none;
@@ -160,7 +166,6 @@ main {
 .post {
   line-height: 150%;
   margin-bottom: 5px;
-
 }
 
 li {

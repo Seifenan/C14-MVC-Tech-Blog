@@ -9,17 +9,23 @@
 </head>
 
 <body>
+
   <div class="wrapper">
     <header>
       <h1>
-        <a href="/">Tech Blog 💻</a>
+        <a href="/">💻 Tech Blog</a>
       </h1>
+      {{!-- <img style="width: 60px;" src="https://thumbs.gfycat.com/MadFlawedHarvestmen-max-1mb.gif" alt="PC gif"> --}}
       <nav>
         {{#if loggedIn}}
-        <a href="/dashboard">Add New</a>
-        <button id="logout" class="btn-no-style">Logout</button>
+        <div class="lgBtn">
+          <a href="/dashboard">Add New</a>
+          <button id="logout" class="btn-no-style">Logout</button>
+        </div>
         {{else}}
-        <a href="/login">Login</a>
+        <div style="padding: 10px; padding-top: 14px;">
+          <a href="/login">Login</a>
+        </div>
         {{/if}}
       </nav>
     </header>
@@ -27,10 +33,11 @@
       {{{ body }}}
     </main>
     <footer>
-      Thanks for visiting! Check <a href="https://github.com/Seifenan" target="_blank">GitHub</a> for more of my projects😊
+      Thanks for visiting! Check <a href="https://github.com/Seifenan" target="_blank">GitHub</a> for more of my
+      projects😊
     </footer>
   </div>
-  
+
   {{#if loggedIn}}
   <script src="/javascript/logout.js"></script>
   {{/if}}
