@@ -9,12 +9,13 @@
 </head>
 
 <body>
+
   <div class="wrapper">
     <header>
       <h1>
         <a href="/">💻 Tech Blog</a>
       </h1>
-      <img style="width: 60px;" src="https://thumbs.gfycat.com/MadFlawedHarvestmen-max-1mb.gif" alt="PC gif">
+      {{!-- <img style="width: 60px;" src="https://thumbs.gfycat.com/MadFlawedHarvestmen-max-1mb.gif" alt="PC gif"> --}}
       <nav>
         {{#if loggedIn}}
         <a href="/dashboard">Add New</a>
@@ -30,10 +31,11 @@
       {{{ body }}}
     </main>
     <footer>
-      Thanks for visiting! Check <a href="https://github.com/Seifenan" target="_blank">GitHub</a> for more of my projects😊
+      Thanks for visiting! Check <a href="https://github.com/Seifenan" target="_blank">GitHub</a> for more of my
+      projects😊
     </footer>
   </div>
-  
+
   {{#if loggedIn}}
   <script src="/javascript/logout.js"></script>
   {{/if}}

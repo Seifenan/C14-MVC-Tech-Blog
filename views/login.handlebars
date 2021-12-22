@@ -15,7 +15,7 @@
   <div style="text-align: center;">
     <p>Don't have an Account?<button class="signpBtn">Sign Up Here!</button></p>
   </div>
-</div>  
+</div>
 
 <div id="createPost" class="signUp hide">
   <form class="signup-form">
@@ -42,23 +42,23 @@
 
 <script>
 
-var signinForm = document.querySelector('.signIn');
-var signupForm = document.querySelector('.signUp');
-var signinBtn = document.querySelector('.signnBtn');
-var signupBtn = document.querySelector('.signpBtn');
+  var signinForm = document.querySelector('.signIn');
+  var signupForm = document.querySelector('.signUp');
+  var signinBtn = document.querySelector('.signnBtn');
+  var signupBtn = document.querySelector('.signpBtn');
 
 
-function signIn() {
-  signinForm.setAttribute('class', 'show');
-  signupForm.setAttribute('class', 'hide');
-}
-function signUp() {
-  signupForm.setAttribute('class', 'show');
-  signinForm.setAttribute('class', 'hide');
-}
+  function signIn() {
+    signinForm.setAttribute('class', 'show');
+    signupForm.setAttribute('class', 'hide');
+  }
+  function signUp() {
+    signupForm.setAttribute('class', 'show');
+    signinForm.setAttribute('class', 'hide');
+  }
 
-signinBtn.addEventListener('click', signIn);
-signupBtn.addEventListener('click', signUp);
+  signinBtn.addEventListener('click', signIn);
+  signupBtn.addEventListener('click', signUp);
 
 </script>
 
