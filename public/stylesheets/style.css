@@ -99,7 +99,7 @@ main {
   padding: 2% 4%;
 }
 
-.createPost {
+#createPost {
   padding-top: 90px;
 }
 
@@ -128,7 +128,7 @@ main {
   padding: 10px;
   padding-top: 40px;
   margin: 30px;
-  box-shadow: 7px 10px 15px var(--shadow);
+  box-shadow: 0px 0px 50px 20px var(--shadow);
 }
 
 .btn-no-style {
