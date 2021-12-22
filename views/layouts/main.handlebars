@@ -14,12 +14,15 @@
       <h1>
         <a href="/">Tech Blog 💻</a>
       </h1>
+      <img style="width: 60px;" src="https://thumbs.gfycat.com/MadFlawedHarvestmen-max-1mb.gif" alt="PC gif">
       <nav>
         {{#if loggedIn}}
         <a href="/dashboard">Add New</a>
         <button id="logout" class="btn-no-style">Logout</button>
         {{else}}
-        <a href="/login">Login</a>
+        <div style="padding: 10px;">
+          <a href="/login">Login</a>
+        </div>
         {{/if}}
       </nav>
     </header>
